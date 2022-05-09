@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+
+            <h1 class="logo"><img src="Vector.png" alt="Logo-Alura"></h1>
+
+        </header>
+
+        <main>
+
+            <section class="seccion-principal">
+
+                <textarea cols="60" rows="13" class="principal" placeholder="Ingrese el texto aqui" autofocus onkeyup="this.value=this.value.toLowerCase();"></textarea>
+
+                <div class="contenedor-advertencia">
+
+                    <img src="exclamacion.png" class="exclamacion">
+                    <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+
+                </div>
+
+                <div class="contenedor-botones">
+
+                    <input type="submit" value="Encriptar" id="boton-encriptar" class="boton" onclick="encriptarboton()">
+                    <input type="submit" value="Desencriptar" id="boton-desencriptar" class="boton" onclick="desencriptarboton()">
+
+                </div>
+
+            </section>
+
+            <section class="seccion-secundaria">
+
+                <div class="div-imagen">
+
+                    <img src="Muneco.svg" class="imagen">
+                    <p class="textoimg1">Ningún mensaje fue encontrado</p>
+                    <p class="textoimg2">Inserta el texto que desees encriptar o desencriptar</p>
+
+                </div>
+
+                <div class="caja-texto">
+
+                    <textarea cols="20" rows="16" class="secundario"></textarea>
+                    <input type="submit" value="Copiar" id="boton-copiar" class="boton" onclick="copiarboton()">
+
+                </div>
+
+                <div class="cuadradoblanco"></div>
+
+            </section>
+                 
+        </main>
+
+        <footer>
+            <p class="pie-pagina">José Antonio Baños González</p>
+        </footer>
+    </body>
+
+    <script src="script.js"></script>
+</html>
